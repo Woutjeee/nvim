@@ -26,7 +26,16 @@ return require('packer').startup(function(use)
         -- Autocompletion
         {'hrsh7th/nvim-cmp'},     -- Required
         {'hrsh7th/cmp-nvim-lsp'}, -- Required
-        {'L3MON4D3/LuaSnip'},     -- Required
+        {'L3MON4D3/LuaSnip'},-- Required
     }
 }
+-- Treesitter
+
+use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+        local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+        ts_update()
+    end,}
+
 end)
