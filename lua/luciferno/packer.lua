@@ -38,4 +38,7 @@ use {
         ts_update()
     end,}
 
+    -- Status line & Tab Line
+    use { 'tamton-aquib/staline.nvim' }
+
 end)
