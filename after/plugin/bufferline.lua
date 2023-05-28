@@ -9,6 +9,12 @@ require("bufferline").setup{
             end
             return s
         end,
-        separtor_style = "slope"
+        separtor_style = "slope",
+        offsets = {
+            {
+                filetype = "NvimTree",
+                separator = true
+            }
+        },
     }
 }
