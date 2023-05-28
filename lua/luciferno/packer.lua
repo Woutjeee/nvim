@@ -57,4 +57,9 @@ use {
             'nvim-tree/nvim-web-devicons'
         }
     }
+    -- Toggleterm
+    use { "akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end
+}
 end)
