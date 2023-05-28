@@ -2,7 +2,7 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use { 'wbthomason/packer.nvim' }
     -- Color scheme | Look in after/plugins/colors to see what theme I selected.
-    use { 'marko-cerovac/material.nvim' }
+    use { 'EdenEast/nightfox.nvim' }
     -- Telescope
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
@@ -29,6 +29,10 @@ return require('packer').startup(function(use)
         {'L3MON4D3/LuaSnip'},-- Required
     }
 }
+
+-- Icon
+use { 'nvim-tree/nvim-web-devicons' }
+
 -- Treesitter
 
 use {
